@@ -14,22 +14,25 @@
 <body>
     <header>
         <nav>
+            <div class="logo">
             <img src="./assets/images/logoAcademlo.svg" alt="logo">
-            <ul>
-                <a href=""><li>STORE</li></a>
-                <a href="" ><li>Home</li></a>
-                <a href=""><li>Products</li></a>
+            <span>STORE</span>
+        </div>
+            <ul class="nav-menu">
+                <li><a href="./index.html" class="nav-menu-link">Home</a></li>
+                <li><a href="#products" class="nav-menu-link nav-menu-link_active" >Products</a></li>
             </ul>
-            <div class="icons-nav">
-                <img src="./assets/images/moon.png" alt="moon">
-                <div class="count">
-                    <img src="./assets/images/shopping-bag.png" alt="bag" class="cart">
-                    <span class="cart-count">0</span>
-                </div>
-                
-                <i class="bx bx-grid-alt"></i>
+            <div class="icons">
+                    <img src="./assets/images/moon.png" alt="moon"> </div>
+                    <div class="count">
+                        <img src="./assets/images/shopping-bag.png" alt="bag" class="cart">
+                        <span class="cart-count">0</span>
+                    </div>
+                    <div>
+                    <i class="bx bx-grid-alt"></i></div>
             </div>
         </nav>
+    </header>
         <section class="introduction">
             <h1>New Sweatshirt</h1>
             <h1>COLLECTIONS 2022</h1>
@@ -41,8 +44,8 @@
         <section class="image">
             <img src="./assets/images/featured2.png" alt="">
         </section>
-    </header>
-    <section class="sub-menu">
+   
+    <section id="products" class="sub-menu">
        <div class="conten-submenu">
         <p>Show All</p>
         <small>show all products</small>

@@ -89,15 +89,68 @@ button {
     cursor: pointer;
   }
 
-nav{
+  nav{
+    height: 60px;
+    width: 100vw;
+    background-color: hsl(206, 4%, 97%);
     display: flex;
     align-items: center;
+    position: fixed;
+    justify-content: space-around;
 }
-nav>img{
-    margin-left: 3.5rem;
-    height: 65px;
-    width: 65px;
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 2.5rem;
+  margin-right: 4rem;
 }
+.logo img, .logo span{
+  margin-right: 1rem;
+}
+.nav-menu{
+  display: flex;
+  list-style: none;
+  margin-left: 1rem;
+  
+}
+
+.nav-menu a{
+  text-decoration: none;
+}
+.nav-menu li{
+  margin-right: 1.25rem;
+}
+.icons{
+  display: flex;
+  margin-right: 1.75rem;
+  font-size: 1.2rem;
+  width: 65%;
+  justify-content: flex-end;
+  position: relative;
+ 
+}
+.icons i{
+  margin-right: .6rem;
+}
+.icons :nth-child(3){
+  display: none;
+}
+.cart-count{
+  font-size: x-small;
+  background-color: rgb(77, 70, 70);
+  padding: .3rem .5rem;
+  border-radius: 50%;
+  color: #fff;
+  position: absolute;
+  right: 0rem;
+  top: .6rem;
+  
+}
+
+
+
+
+
 ul{
     width: 50%;
     font-size:large;
@@ -277,5 +330,4 @@ footer{
 .shopping-cart.show{
     display: block;
 }
-
 
