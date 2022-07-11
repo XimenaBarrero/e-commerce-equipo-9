@@ -63,10 +63,6 @@ header{
  top: 7rem;
  left: 5rem;
 }
-.introduction>h1{
-    font-size:40px;
-    padding: .1rem;
-}
 
 .home_img{
   display: flex;
@@ -75,18 +71,8 @@ header{
  width: 80%;
  height: 140%;
  z-index: -1;
-}
-
-.home_img > img{
-  background-color: rgb(224, 56, 90);
- width: 100%;
- padding-top: 4.5rem;
-}
-
-.price{
-    font-size: 25px;
-    color: var(--red-color);
-    font-weight: bold;
+ background-color: rgb(224, 56, 90);
+ padding-top: 30px;
 }
 
 .home-data{
@@ -96,12 +82,17 @@ header{
   font-size: 38px;
 }
 
-.introduction > p{
-    font-size: .9rem;
-    padding: .5rem;
+.price{
+  font-size: 25px;
+  color: var(--red-color);
+  font-weight: bold;
+}
+
+.home-data > p{
     font-size: 16px;
     color: var(--text-color);
 }
+
 button {
     background-color: rgb(184, 168, 168);
     border: none;
@@ -142,22 +133,33 @@ button {
 
 .nav-menu a{
   text-decoration: none;
+  padding-left: 15px;
 }
 .nav-menu li{
-  margin-right: 1.25rem;
+  margin-right: 2rem;
+  text-decoration: none;
 }
+
+.nav-menu-link{
+  color: var(--red-color);
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.nav-menu-link_active{
+  color: black
+}
+
 .icons{
   display: flex;
   margin-right: 1.75rem;
+  padding-right: 20px;
   font-size: 1.2rem;
   width: 65%;
   justify-content: flex-end;
   position: relative;
- 
 }
-.icons i{
-  margin-right: .6rem;
-}
+
 .icons :nth-child(3){
   display: none;
 }
