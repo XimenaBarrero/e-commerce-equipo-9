@@ -49,13 +49,13 @@ body{
     background-color: var(--body-color);
 }
 header{
+  padding-left: 20px;
     display: flex;
     flex-direction: column;
     position: relative;
     height: 80vh;
     color:var(--title-color);
 }
-
 
 .introduction{
  width: 45%;
@@ -67,11 +67,35 @@ header{
     font-size:40px;
     padding: .1rem;
 }
+
+.home_img{
+  display: flex;
+  position: absolute;
+ left: 45rem;
+ width: 80%;
+ height: 140%;
+ z-index: -1;
+}
+
+.home_img > img{
+  background-color: rgb(224, 56, 90);
+ width: 100%;
+ padding-top: 4.5rem;
+}
+
 .price{
-    font-size: 27px;
+    font-size: 25px;
     color: var(--red-color);
     font-weight: bold;
 }
+
+.home-data{
+  padding-left: 60px;
+}
+.home-data> h1{
+  font-size: 38px;
+}
+
 .introduction > p{
     font-size: .9rem;
     padding: .5rem;
@@ -237,25 +261,7 @@ li{
     right: 1.5rem;
     top:.55rem;
 }
-.image{
-    display: flex;
-    position: absolute;
-   width: 30%;
-   height: 87%;
-   right: 4rem;
-   align-self:stretch;
-  
-    
-    
-}
 
-.image > img{
-    background-color: rgb(224, 56, 90);
-   width: 100%;
-   
-   padding-top: 4.5rem;
-   
-}
 .sub-menu{
     display: flex;
     gap: 1.5rem;
