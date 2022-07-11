@@ -35,6 +35,7 @@
     --body-color: hsl(206, 4%, 97%);
     --container-color: #fff;
     --border-color: hsl(0, 0%, 94%);
+    --red-color: rgb(217, 67, 94);
 }
 
 *{
@@ -54,9 +55,7 @@ header{
     height: 80vh;
     color:var(--title-color);
 }
-header.scroll-header{
-    background-color: var(--container-color);
-}
+
 
 .introduction{
  width: 45%;
@@ -65,16 +64,19 @@ header.scroll-header{
  left: 5rem;
 }
 .introduction>h1{
-    font-size:xx-large;
+    font-size:40px;
     padding: .1rem;
 }
 .price{
-    font-size: larger;
-    color: crimson;
+    font-size: 27px;
+    color: var(--red-color);
+    font-weight: bold;
 }
 .introduction > p{
     font-size: .9rem;
     padding: .5rem;
+    font-size: 16px;
+    color: var(--text-color);
 }
 button {
     background-color: rgb(184, 168, 168);
@@ -144,27 +146,11 @@ button {
   position: absolute;
   right: 0rem;
   top: .6rem;
-  
 }
 
 
-
-button {
-  cursor: pointer;
-  border: none;
-  outline: none;
-}
-
-.home__btns {
-  display: flex;
-  align-items: center;
-}
-
-.home__button {
+.add_cart{
   box-shadow: 0 12px 24px hsla(0, 0%, 10%, .2);
-}
-
-.button {
   display: inline-block;
   background-color: var(--button-color);
   color: #FFF;
@@ -173,30 +159,41 @@ button {
   transition: .3s;
 }
 
+.button{
+  display: flex;
+  align-items: center;
+  display: inline-block;
+  background-color: var(--button-color);
+  color: #FFF;
+  padding: 1.25rem 2rem;
+  font-weight: bold;
+  transition: .3s;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.home__button{
+  font-size: 15px;
+}
+
 .button:hover {
   background-color: var(--first-color);
   color: var(--body-color);
 }
+.home__button:hover{
+  background-color: rgb(217, 67, 94);
+  }
 
 .button--gray {
   background-color: hsl(0, 0%, 75%);
   color: var(--title-color);
+  padding: 1rem 1.5rem;
+  text-decoration: none;
 }
 
 .button--gray:hover {
   background-color: hsl(0, 0%, 63%);
 }
-
-.button--small {
-  padding: 1rem 1.5rem;
-}
-
-
-
-
-
-
-
 
 ul{
     width: 50%;
