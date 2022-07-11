@@ -593,6 +593,64 @@ body.dark-theme {
 .active-product .products__title {
   color: var(--title-color);
 }
+/*=============== CARDS JULIAN ===============*/
+/*
+#cards{
+  width: 97vw;
+  padding: 0 30px 0 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
+}*/
+.img-article{
+  height: 400px;
+  width: 290px;
+  position: relative;
+  display: flex;
+  background-color: gray;
+  border-radius: 15px 15px 0 0;
+  justify-content: center;
+  align-items: center;
+}
+article div{
+  border-radius: 15px;
+  /* background-color: aqua;    */
+  box-shadow: 0 0 20px gray;
+  height: 520px;
+  width: 290px;
+  margin: 20px;
+}
+.info-article{
+ display: inline-block;
+ padding: 20px;
+}
+.info-article nav{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.img-article img{
+  height: 75%;
+}
+article div button{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: red;
+  border: 0;
+  box-shadow: 0 0 20px gray;
+  position: absolute;
+  right: 30px;
+  top: 375px;
+  color: white;
+  font-size: larger;
+}
 
 /*=============== FOOTER ===============*/
 .footer {
