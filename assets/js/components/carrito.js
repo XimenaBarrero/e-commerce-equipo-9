@@ -8,7 +8,19 @@ function pintarArticulos () {
     const html = ""
 
     for (const articulo of articulos){
-        {id: 1, cantidad: 1}
+       const productoFiltrado = productos.find(producto => producto.id === articulo.id)
+
+       const {id, nombre, imagen, precio, cantidad} = productoFiltrado
+
+       html += 
+       <div>
+           <img src="${imagen}" alt="${nombre}">
+               <div>
+                   <h2>${nombre} - $ ${precio}</h2>
+                   <button class="remover" type="button" data-id="${id}">-</button>
+                   <p>Cantidad: ${cantidad}</p>
+       </div>
+
     }
 }
 
