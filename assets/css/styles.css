@@ -2,29 +2,6 @@
 /*-------------GOOGLE FONT----------------*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
-/*
-    COLORES:
-    --first-color: hsl(354, 78%, 60%);
-    --button-color: hsl(0, 0%, 17%);
-    --button-color-alt: hsl(0, 0%, 21%);
-    --card-color: hsl(0, 0%, 90%);
-    --title-color: hsl(0, 0%, 15%);
-    --text-color: hsl(0, 0%, 35%);
-    --text-color-light: hsl(0, 0%, 55%);
-    --body-color: hsl(206, 4%, 97%);
-    --container-color: #fff;
-    --border-color: hsl(0, 0%, 94%);
-    COLORES DARK MODE:
-    --first-color: hsl(182, 53%, 74%);
-    --button-color: hsl(246, 16%, 12%);
-    --button-color-alt: hsl(0, 0%, 28%);
-    --card-color: hsla(246, 16%, 5%, .5);
-    --title-color: hsl(0, 0%, 95%);
-    --text-color: hsl(0, 0%, 75%);
-    --body-color: hsl(249, 19%, 14%);
-    --container-color: hsl(246, 16%, 12%);
-    --border-color: hsl(0, 0%, 20%);
-*/
 :root{
     --button-color: hsl(0, 0%, 17%);
     --button-color-alt: hsl(0, 0%, 21%);
@@ -37,7 +14,7 @@
     --border-color: hsl(0, 0%, 94%);
     --red-color: rgb(217, 67, 94);
 }
-
+/*CONFIGURACIONES GENERALES*/
 *{
     margin: 0;
     padding: 0;
@@ -47,49 +24,6 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-color: var(--body-color);
-}
-header{
-  padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    color:var(--title-color);
-}
-
-.introduction{
- width: 45%;
- position: relative;
- top: 7rem;
- left: 5rem;
-}
-
-.home_img{
-  display: flex;
-  position: absolute;
- left: 45rem;
- width: 80%;
- height: 140%;
- z-index: -1;
- background-color: rgb(224, 56, 90);
- padding-top: 30px;
-}
-
-.home-data{
-  padding-left: 60px;
-}
-.home-data> h1{
-  font-size: 38px;
-}
-
-.price{
-  font-size: 25px;
-  color: var(--red-color);
-  font-weight: bold;
-}
-
-.home-data > p{
-    font-size: 16px;
-    color: var(--text-color);
 }
 
 button {
@@ -104,8 +38,16 @@ button {
     margin: 1rem 0;
     cursor: pointer;
   }
+/*===============HEADER================*/
+header{
+  padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color:var(--title-color);
+}
 
-  nav{
+nav{
     height: 60px;
     width: 95vw;
     background-color: hsl(206, 4%, 97%);
@@ -113,28 +55,32 @@ button {
     align-items: center;
     position: fixed;
     justify-content: space-around;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-right: 3rem;
 }
+
 .logo {
   display: flex;
   align-items: center;
-  margin-left: 2.5rem;
+  margin-left: 8rem;
   margin-right: 4rem;
 }
-.logo img, .logo span{
-  margin-right: 1rem;
+
+.logo span{
+  margin-left: .5rem;
+  font-weight: bold;
 }
+
 .nav-menu{
   display: flex;
   list-style: none;
   margin-left: 1rem;
-  
 }
 
 .nav-menu a{
   text-decoration: none;
   padding-left: 15px;
-}
-.nav-menu li{
   margin-right: 2rem;
   text-decoration: none;
 }
@@ -152,36 +98,64 @@ button {
 .icons{
   display: flex;
   margin-right: 1.75rem;
-  padding-right: 20px;
+  padding-right: 15px;
   font-size: 1.2rem;
   width: 65%;
   justify-content: flex-end;
   position: relative;
 }
 
-.icons :nth-child(3){
-  display: none;
+.count > img{
+  height: 1.5rem;
+  margin-right: 1.2rem;
 }
-.cart-count{
+
+.count > span{
   font-size: x-small;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(77, 70, 70);
   padding: .3rem .5rem;
   border-radius: 50%;
   color: #fff;
   position: absolute;
-  right: 0rem;
-  top: .6rem;
+  right: 4.5rem;
+  top:.55rem;
 }
+/*=============SECCION NEW SWEATSHIRTS Y BOTONES=========*/
+.introduction{
+  width: 45%;
+  position: relative;
+  top: 7rem;
+  left: 5rem;
+ }
+ 
+ .home_img{
+   display: flex;
+   position: absolute;
+  left: 45rem;
+  width: 80%;
+  height: 140%;
+  z-index: -1;
+  background-color: rgb(224, 56, 90);
+  padding-top: 30px;
+ }
+ 
+ .home-data{
+   padding-left: 60px;
+ }
+ 
+ .home-data> h1{
+   font-size: 38px;
+ }
+ 
+ .home-data > p{
+     font-size: 16px;
+     color: var(--text-color);
+ }
 
-
-.add_cart{
-  box-shadow: 0 12px 24px hsla(0, 0%, 10%, .2);
-  display: inline-block;
-  background-color: var(--button-color);
-  color: #FFF;
-  padding: 1.25rem 2rem;
-  font-weight: var(--font-medium);
-  transition: .3s;
+.price{
+  font-size: 25px;
+  color: var(--red-color);
+  font-weight: bold;
 }
 
 .button{
@@ -197,6 +171,7 @@ button {
   border: none;
   outline: none;
 }
+
 .home__button{
   font-size: 15px;
 }
@@ -205,6 +180,7 @@ button {
   background-color: var(--first-color);
   color: var(--body-color);
 }
+
 .home__button:hover{
   background-color: rgb(217, 67, 94);
   }
@@ -225,50 +201,25 @@ ul{
     font-size:large;
     padding: 0;
 }
+
 ul>a{
     text-decoration: none;
     margin: 0 .8rem;
-    
-    
 }
-
 
 li{
     display: inline;
     color:var(--title-color);
 }
-.icons-nav{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
-    width: 35%;
-    text-align: right;
-    z-index: 1;
-       
-}
-.icons-nav >img, .count>img{
-    height: 1.5rem;
-    margin-right: 1.2rem;
-    
-}
-.count >  span{
-    font-size: x-small;
-    background-color: rgb(77, 70, 70);
-    padding: .3rem .5rem;
-    border-radius: 50%;
-    color: #fff;
-    position: absolute;
-    right: 1.5rem;
-    top:.55rem;
-}
 
+/*=========================PRODUCTS======================*/
 .sub-menu{
     display: flex;
     gap: 1.5rem;
     justify-content: center;
     padding-bottom: 1rem;
 }
+
 .content-submenu{
     padding-right: 1rem;
     text-align: center;
@@ -276,8 +227,8 @@ li{
     border-right: 1px solid rgb(167, 159, 159);
     color: var(--text-color);
     font-size: 17px;
-
 }
+
 .content-submenu>p{
     margin-bottom: .4rem;
     font-size: 20px;
@@ -287,7 +238,7 @@ li{
 .last{
   border-right: none;
 }
-
+/*===============CARDS=============*/
 article{
   width: 97vw;
   padding: 0 30px 0 30px;
@@ -298,6 +249,7 @@ article{
   justify-content: center;
   align-items: center;
 }
+
 .img-article{
   height: 400px;
   width: 290px;
@@ -308,6 +260,7 @@ article{
   justify-content: center;
   align-items: center;
 }
+
 article div{
   border-radius: 15px;
   /* background-color: aqua;    */
@@ -316,14 +269,11 @@ article div{
   width: 290px;
   margin: 20px;
 }
-.info-article{
- display: inline-block;
- padding: 20px;
-}
 
 .img-article img{
-  height: 75%;
+  height: 70%;
 }
+
 article div button{
   height: 60px;
   width: 30px;
@@ -337,7 +287,6 @@ article div button{
   font-size: 30px;
 }
 
-
 .center{
  display: flex;
  justify-content: center;
@@ -350,7 +299,7 @@ article div button{
   padding-left: 120px;
   padding-right: 120px;
 }
-
+/*=======FOOTER=======*/
 footer{
     margin-top: 2.5rem;
     display: flex;
@@ -367,64 +316,68 @@ footer{
     border-color: transparent;
     font-size: 18px;
 }
+
 .content-footer>p{
     font-weight: bold;
     padding-bottom: 1rem;
 }
+
 .content-footer>small{
     display: block;
     padding: .25rem 0;
     color:var(--text-color)
 }
+
+.shopping-cart{
+  display:flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 40%;
+  background-color: rgb(223, 220, 215);
+  position: fixed;
+  right: 0;
+  top:0; 
+  z-index: 50;
+  display: none;
+}
+
 .footer_copy{
   background-color: var(--card-color);
   text-align: center;
   color: var(--text-color);
 }
-.social-icons>i{
-    padding-right: .25rem ;
-}
-.shopping-cart{
-    display:flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 40%;
-    background-color: rgb(223, 220, 215);
-    position: fixed;
-    right: 0;
-    top:0; 
-    z-index: 50;
-    display: none;
-}
+/*======EXTRA========*/
 .products-list{
     display:flex;
     flex-direction: column;
     position: relative;
     text-align: center;
     padding-top: 5rem;
-
 }
+
 .products-list>i{
     position: absolute;
     top: .8rem;
     right: .8rem;
 }
+
 .empty-state{
     padding: top 5rem;;
 }
+
 .empty-state>h5{
     padding-bottom: 1rem;
 }
+
 .empty-state>img{
     width: 55%;
     height: 55%;
 }
+
 .empty-state p {
     font-size: small;
-    
 }
 
 .shopping-cart.show{
     display: block;
 }
-
