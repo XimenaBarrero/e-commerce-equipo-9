@@ -1,4 +1,4 @@
-import products from "../database/index.js"
+/*import products from "../database/index.js"
 
 let articulos =[]
 
@@ -23,4 +23,4 @@ function pintarArticulos () {
 
     }
 }
-
+*/
