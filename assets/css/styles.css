@@ -350,43 +350,35 @@ article div button{
   padding-right: 120px;
 }
 
-/*
-.content-icon{
-    position: absolute;
-    border-radius: 50%;
-    background-color: var(--container-color);
-    border: .5px solid  rgb(236, 232, 232);
-    left: 70%;
-    top:70%;
-}
-
-.content-text{
-    background-color: var(--container-color);
-    padding: 1rem 0rem 1rem 2rem;
-}
-*/
-
 footer{
     margin-top: 2.5rem;
     display: flex;
     justify-content: space-evenly;
     background-color: var(--card-color);
-    
-    
+    padding-left: 100px;
+    padding-right: 30px;
 }
+
 .content-footer{
     border: 1px solid rgb(221, 215, 215);
     width: 20%;
     padding: 4rem 1.5rem 2.5rem 1.5rem;
+    border-color: transparent;
+    font-size: 18px;
 }
 .content-footer>p{
-    font-size: .75rem;
     font-weight: bold;
     padding-bottom: 1rem;
 }
 .content-footer>small{
     display: block;
     padding: .25rem 0;
+    color:var(--text-color)
+}
+.footer_copy{
+  background-color: var(--card-color);
+  text-align: center;
+  color: var(--text-color);
 }
 .social-icons>i{
     padding-right: .25rem ;
