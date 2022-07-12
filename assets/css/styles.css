@@ -27,10 +27,10 @@ body{
 }
 
 button {
-    background-color: rgb(184, 168, 168);
+    /* background-color: rgb(184, 168, 168); */
     border: none;
     color: rgb(27, 26, 26);
-    padding: 15px 32px;
+    /* padding: 15px 32px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -380,4 +380,10 @@ footer{
 
 .shopping-cart.show{
     display: block;
+}
+
+/*==== Modo Oscuro ====*/
+body.darkmode {
+  background-color: var(--button-color-alt);
+  color: white;
 }
