@@ -321,14 +321,7 @@ article div{
  display: inline-block;
  padding: 20px;
 }
-.info-article nav{
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-}
+
 .img-article img{
   height: 75%;
 }
@@ -349,6 +342,12 @@ article div button{
  justify-content: center;
 }
 
+.content-cards{
+  display: flex;
+  flex-direction: row;
+}
+
+/*
 .content-icon{
     position: absolute;
     border-radius: 50%;
@@ -358,11 +357,12 @@ article div button{
     top:70%;
 }
 
-
 .content-text{
     background-color: var(--container-color);
     padding: 1rem 0rem 1rem 2rem;
 }
+*/
+
 footer{
     margin-top: 2.5rem;
     display: flex;
